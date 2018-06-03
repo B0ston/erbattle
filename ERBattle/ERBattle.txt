@@ -1,0 +1,8 @@
+"Ear Rape Battle"
+{
+	"base"		"base"
+	"title"		"Ear Rape Battle"
+	"maps"		"^gm_"
+	"menusystem"	"1"
+	"workshopid"	""
+}
