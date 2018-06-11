@@ -36,9 +36,7 @@ net.Receive("sendVolValue",function(len, pl)
 	-- Sets new health based off 'dmg' variable
 	trgt:SetHealth(trgt:Health() - dmg)
 	-- Kills target, doesn't allow target to have a negative health.
-	if trgt:IsPlayer() then
-		if (trgt:Health() <= 0 and trgt:Alive()) then
-			trgt:Kill()
-		end
+	if trgt:IsPlayer() and trgt:Health() <= 0 and trgt:Alive() then
+		trgt:Kill()
 	end
 end)
